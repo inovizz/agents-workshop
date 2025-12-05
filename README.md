@@ -7,7 +7,7 @@ A comprehensive hands-on workshop for building AI agents using LangChain and Lan
 | Session | Topics |
 |---------|--------|
 | **Session 1** | Introduction to Agents, ReAct Pattern, Workflow Patterns, Multi-Agent Systems, Framework Comparison, Advanced LangGraph |
-| **Session 2** | Production LangGraph, Architectural Patterns, Advanced Patterns, Context Engineering |
+| **Session 2** | Memory Architecture, Advanced HITL, Self-Reflection, Multi-Agent Collaboration, Context Engineering |
 | **Session 3** | Evaluation Frameworks, Observability & Cost, Security & Guardrails, Case Studies, MCP Integration |
 
 ---
@@ -101,10 +101,14 @@ Agentic-AI Workshops/
 │   └── module-5-advanced-langgraph.ipynb
 │
 ├── session-2/            # Production Patterns
-│   ├── module-1-production-langgraph.ipynb
-│   ├── module-2-architectural-patterns.ipynb
-│   ├── module-3-advanced-patterns.ipynb
-│   └── module-4-context-engineering.ipynb
+│   ├── module-0-opening.ipynb
+│   ├── module-1-memory-architecture.ipynb
+│   ├── module-2-advanced-hitl.ipynb
+│   ├── module-3-self-reflection.ipynb
+│   ├── module-4-multi-agent-collaboration.ipynb
+│   ├── module-5-context-engineering.ipynb
+│   └── projects/
+│       └── incident-postmortem/  # Hands-on project
 │
 └── session-3/            # Enterprise & Operations
     ├── module-1-evaluation-frameworks.ipynb
@@ -213,11 +217,37 @@ python verify_setup.py
 
 ## 📖 Learning Path
 
-### Recommended Order
+### Session 1: Foundations (Start Here!)
 
-1. **Start with Session 1** - Build foundational understanding
-2. **Progress to Session 2** - Learn production patterns
-3. **Complete with Session 3** - Master enterprise concerns
+| Module | Topic | What You'll Learn |
+|--------|-------|-------------------|
+| 0 | Introduction to Agents | What makes an agent, LLM + Tools + Memory |
+| 1 | ReAct & Foundations | Reasoning + Acting loop, tool binding |
+| 2 | Workflow Patterns | Chaining, Routing, Parallelization, Orchestrator-Worker |
+| 3 | Multi-Agent Systems | Supervisor pattern, agent coordination |
+| 4 | Framework Comparison | LangGraph vs CrewAI vs AutoGen |
+| 5 | Advanced LangGraph | StateGraph, checkpointing, basic HITL |
+
+### Session 2: Production Patterns
+
+| Module | Topic | What You'll Learn |
+|--------|-------|-------------------|
+| 0 | Opening | Session 1 recap, setting context |
+| 1 | Memory Architecture | Store API, semantic memory, streaming |
+| 2 | Advanced HITL | `interrupt()`, `Command(resume=...)`, `@task` |
+| 3 | Self-Reflection | Generate → Critique → Revise, LLM-as-Judge |
+| 4 | Multi-Agent Collaboration | Peer review, Send API, parallel agents |
+| 5 | Context Engineering | WRITE/SELECT/COMPRESS/ISOLATE pillars |
+
+### Session 3: Enterprise & Operations
+
+| Module | Topic | What You'll Learn |
+|--------|-------|-------------------|
+| 1 | Evaluation Frameworks | DeepEval, LangSmith, automated testing |
+| 2 | Observability & Cost | Tracing, metrics, cost optimization |
+| 3 | Security & Guardrails | Prompt injection, Meta's Rule of Two |
+| 4 | Case Studies | Klarna, Replit, Elastic production examples |
+| 5 | MCP Integration | Model Context Protocol for tool interop |
 
 ### Each Module Contains
 
